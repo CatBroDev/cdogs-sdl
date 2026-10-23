@@ -1,0 +1,12 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>C-Dogs SDL browser edition</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#080c14;color:#eafcff;font:16px system-ui}canvas{display:block;width:min(100vw,133.333vh);height:min(75vw,100vh);margin:auto;image-rendering:pixelated;touch-action:none;outline:none}.embedded body{height:100vh;display:grid;place-items:center;overflow:hidden}.embedded .outside{display:none}button{min-height:44px;padding:8px 16px}.outside{padding:12px}a{color:#8edaff}</style></head><body>
+<canvas id="canvas" width="640" height="480" tabindex="0" aria-label="C-Dogs SDL game"></canvas>
+<p id="loading" role="status" style="position:fixed;inset:40% 0 auto;text-align:center;background:#080c14;padding:16px">Loading game…</p>
+<div class="outside"><button id="start">Start</button> <button id="sound">Sound: off</button> <p id="status">Loading…</p>
+<p>Original C-Dogs by Ronny Wester. C-Dogs SDL by Jeremy Chin, Lucas Martin-King, Cong Xu and contributors.
+<a href="source.zip">Corresponding source</a> · <a href="notices.txt">Credits and licenses</a></p></div>
+<script>window.logs=[];window.errors=[];const zh=new URLSearchParams(location.search).get('lang')?.startsWith('zh');var Module={canvas:document.querySelector('#canvas'),noInitialRun:true,arguments:[],print:s=>logs.push(s),printErr:s=>errors.push(s),locateFile:(name,prefix)=>prefix+(/\.(wasm|data)$/.test(name)?name+'.bin':name),setStatus:text=>{const match=/Downloading data\.\.\. \((\d+)\/(\d+)\)/.exec(text);document.querySelector('#loading').textContent=match?(zh?'正在载入游戏数据：':'Loading game data: ')+(Number(match[1])/1000000).toFixed(1)+' MB':(zh?'正在启动游戏…':'Starting game…');}};Module.setStatus('');</script>
+<script src="persistence.js"></script><script src="input.js"></script><script src="music-manifest.js"></script><script src="music.js"></script><script src="bridge.js"></script><script src="cdogs.js"></script>
+</body></html>

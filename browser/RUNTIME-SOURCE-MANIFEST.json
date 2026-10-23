@@ -1,0 +1,30 @@
+{
+  "deployedBundle": "489565d1badac7cc0978404481f440b12f56c832e2a4fc28eefaa30e1c521053",
+  "upstream": "a388e3918c3a70e8a753a754f01ee21f8a31f28f",
+  "files": [
+    {
+      "path": "web/bridge.js",
+      "sha256": "7712bc74b10aea8da77854d59b230ea97543b4439c22c802923d8cd954f8a116"
+    },
+    {
+      "path": "web/browser.c",
+      "sha256": "a9075bcaae8336f9cacefc06d311248a839aa73f649703a52b6008fef1db62f5"
+    },
+    {
+      "path": "web/index.html",
+      "sha256": "4e4d86766fd7fb9edd8bbecf7995309204129577600f0ff67a0a6efc5d273b72"
+    },
+    {
+      "path": "web/input.js",
+      "sha256": "43a1cadb743755ab7c1ff382fa8edd3306a7e223764ae9b818d8a01a93b296cb"
+    },
+    {
+      "path": "web/music.js",
+      "sha256": "2b940c60c24ad02fd52a4f3d479058252bb78cb61c9afa31feea611a5cb7a35e"
+    },
+    {
+      "path": "web/persistence.js",
+      "sha256": "e39780bde8198e988bc410bdcfb8f91fa15d057e7d55603575fba4af5cb2c0a2"
+    }
+  ]
+}

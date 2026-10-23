@@ -1,0 +1,14 @@
+{
+  "keyboard": ["Arrow keys", "X", "Z", "S", "A", "Enter", "Esc"],
+  "gamepad": [],
+  "mouse": [],
+  "bindings": [
+    {"input":"Arrow keys","action":"Move and aim; navigate menus"},
+    {"input":"X","action":"Fire; join as keyboard player one and confirm selections"},
+    {"input":"Z","action":"Switch weapon while stationary; slide with a direction; cancel a selection"},
+    {"input":"S","action":"Throw a grenade when available"},
+    {"input":"A","action":"Toggle the map"},
+    {"input":"Enter","action":"Confirm menu choices"},
+    {"input":"Esc","action":"Pause or return to the previous menu"}
+  ]
+}

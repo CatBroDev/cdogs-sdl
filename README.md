@@ -1,3 +1,27 @@
+# C-Dogs SDL browser restoration
+
+[Play in English](https://oldgamesarchive.org/games/cdogs-sdl) · [中文试玩](https://oldgamesarchive.org/zh-cn/games/cdogs-sdl) · [Build instructions](browser/BUILD.md)
+
+This Fork preserves the original C-Dogs and C-Dogs SDL authors and upstream history.
+Original C-Dogs: Ronny Wester. SDL: Jeremy Chin, Lucas Martin-King, Cong Xu and
+contributors. Existing Emscripten port: Justin Jacobs. Browser integration and
+fixes here: Old Games Archive / CatBroDev. This is not the first Web port.
+
+The `codex/browser-restoration` branch contains the browser work under `browser/`.
+Upstream source and assets remain unchanged; checked Web-only transformations
+are emitted during the build. Two original campaigns and Quick Play are included;
+extra campaigns, foreign-game importers and LAN play are omitted in this edition.
+Native settings/player templates and campaign checkpoints persist in IndexedDB;
+there are no mid-mission save states or cloud saves. Original music loads on demand,
+while original WAV/Ogg effects remain available at startup.
+
+Code and assets retain their separate original licenses. See `COPYING`,
+`doc/CREDITS`, `doc/README_DATA.md`, resource notices and `browser/notices.txt`.
+Full campaign completion and physical Android/iOS gameplay are not yet verified.
+The upstream README follows unchanged.
+
+---
+
 # ![C-Dogs SDL](http://cxong.github.io/cdogs-sdl/images/title.png)
 
 [![Build Status](https://github.com/cxong/cdogs-sdl/workflows/Build/badge.svg)](https://github.com/cxong/cdogs-sdl/actions)
